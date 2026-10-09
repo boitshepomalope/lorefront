@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorefront: A+ content for storytellers</title>
+<meta name="description" content="Amazon A+ content for indie fiction authors, designed once for your whole series. Fixed price, ready in five days.">
+<meta property="og:title" content="Lorefront: A+ content for storytellers">
+<meta property="og:description" content="Amazon A+ content for indie fiction authors, designed once for your whole series.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15161A;--muted:#3F424A;--soft:#F4F5F8;--line:#E3E5EA;--accent:#2F3BD6;--accent-dark:#1E278F;--accent-on-dark:#8F98FF}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.6}
+a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.sans{font-family:'Bricolage Grotesque',system-ui,sans-serif}
+.kicker{margin:0;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0}
+h2{font-weight:800;font-size:clamp(34px,5vw,48px);line-height:1.05;letter-spacing:-.03em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;text-decoration:none;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:18px}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark);color:#fff}
+.btn-outline{border:1.5px solid var(--ink);color:var(--ink)}.btn-outline:hover{background:var(--ink);color:#fff}
+header .wrap{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;justify-content:space-between}
+.logo{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:500;font-size:16px}
+nav a{color:var(--muted);text-decoration:none;padding:12px 0}
+nav a.pill{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:var(--ink);color:#fff}
+.hero{padding-top:56px;padding-bottom:96px;display:flex;flex-wrap:wrap;gap:56px;align-items:center}
+.hero-text{flex:999 1 540px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.hero h1{font-weight:800;font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.035em}
+.hero p.lead{margin:0;max-width:31em;font-size:21px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-art{flex:1 1 320px;display:flex;justify-content:center}
+.aplus{width:100%;max-width:440px;border-radius:16px;background:#fff;border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 30px 60px -32px rgba(21,22,26,.4)}
+.aplus .label{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:15px}
+.aplus .banner{background:#0B0C0D;display:flex;align-items:center;gap:16px;padding:16px 18px}
+.aplus .banner span.t{flex:1;display:flex;flex-direction:column;gap:6px}
+.aplus .banner small{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#F2B33D}
+.aplus .banner b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:22px;line-height:1.05;color:#F4F2EC}
+.aplus .banner img{display:block;width:84px;height:auto}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.tiles span{height:74px;background:var(--soft)}
+.bars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.bars span{height:8px;border-radius:4px;background:#D5D8DF}
+.stat{background:var(--ink);color:#fff}
+.stat .wrap{padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:40px 72px;align-items:center}
+.stat .big{margin:0;flex:0 1 auto;white-space:nowrap;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:clamp(64px,9vw,120px);line-height:.9;letter-spacing:-.04em;color:var(--accent-on-dark)}
+.stat .copy{flex:999 1 460px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.stat .copy p{margin:0;font-size:23px;line-height:1.45}
+.stat .copy small{font-size:15px;color:#B4B7BF}
+.soft{background:var(--soft)}
+.section{padding-top:104px;padding-bottom:104px}
+.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.steps li{display:flex;flex-direction:column;gap:10px;padding:28px;border-radius:16px;background:#fff}
+.steps .n{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--accent)}
+.steps .h{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:22px}
+.steps .d{font-size:17px;color:var(--muted)}
+.pricing{display:flex;flex-wrap:wrap;gap:48px 72px;align-items:flex-start}
+.pricing-intro{flex:1 1 320px;display:flex;flex-direction:column;gap:12px}
+.pricing-cards{flex:999 1 480px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.card{padding:36px;border-radius:20px;border:2px solid var(--ink);display:flex;flex-direction:column;gap:22px}
+.card .top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+.card .price{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:56px;letter-spacing:-.03em}
+.ticks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks svg{flex:0 0 auto;margin-top:5px}
+.note{padding:24px 28px;border-radius:16px;display:flex;flex-direction:column;gap:6px}
+.note b{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:19px}
+.note span{font-size:17px;color:var(--muted)}
+.faq{max-width:860px;display:flex;flex-direction:column;gap:32px}
+.faq h3{font-weight:700;font-size:21px}
+.faq p{margin:6px 0 0;color:var(--muted)}
+.cta{padding-top:120px;padding-bottom:120px;display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center}
+.cta h2{max-width:14em;font-size:clamp(40px,6vw,72px);line-height:1}
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;font-size:15px;color:#5A5D66}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V6l10-4 10 4v16"/><path d="M9 22v-7h8v7"/></svg>Lorefront</a>
+<nav aria-label="Main">
+<a href="#how">How it works</a>
+<a href="#pricing">Pricing</a>
+<a href="#faq">FAQ</a>
+<a class="pill" href="#start">Get a free concept</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section id="top" class="wrap hero">
+<div class="hero-text">
+<p class="kicker">For indie fiction authors on Amazon</p>
+<h1>A+ content for storytellers.</h1>
+<p class="lead">The image section under your book's description on Amazon, designed once for your whole series. Built from your covers and blurbs. Fixed price. Ready in five days.</p>
+<div class="actions">
+<a class="btn btn-primary" href="#start">Get a free concept <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+<a class="btn btn-outline" href="#how">How it works</a>
+</div>
+</div>
+<div class="hero-art" aria-hidden="true">
+<div class="aplus">
+<span class="label">From the Publisher</span>
+<div class="banner"><span class="t"><small>SHUTTERED HORIZONS</small><b>Time endures. Power destroys.</b></span><img src="atomic-fall.jpg" alt=""></div>
+<div class="tiles"><span></span><span></span><span></span></div>
+<div class="bars"><span></span><span></span><span></span></div>
+</div>
+</div>
+</section>
+
+<section class="stat" aria-label="Why it matters">
+<div class="wrap">
+<p class="big">26 of 39</p>
+<div class="copy">
+<p>self-published series we checked on Amazon had no A+ content, including authors with tens of thousands of ratings. A reader who lands on one of your books sees a wall of text where the rest of your series could be.</p>
+<small>Lorefront check of self-published series across five fiction genres, October 2026.</small>
+</div>
+</div>
+</section>
+
+<section id="how" class="soft">
+<div class="wrap section" style="display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p class="kicker">How it works</p>
+<h2>See it before you pay for it.</h2>
+</div>
+<ol class="steps">
+<li><span class="n">01</span><span class="h">Send your series link</span><span class="d">One Amazon link is enough. I'll find the rest of the series.</span></li>
+<li><span class="n">02</span><span class="h">Free concept in 48 hours</span><span class="d">A real design built from your covers and blurbs. Don't like it? You owe nothing.</span></li>
+<li><span class="n">03</span><span class="h">Approve and pay</span><span class="d">One fixed price by PayPal invoice. One round of changes included.</span></li>
+<li><span class="n">04</span><span class="h">Ready in five days</span><span class="d">Images sized to Amazon's specs, plus a step-by-step guide to adding them in KDP.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="pricing" class="wrap section pricing">
+<div class="pricing-intro">
+<p class="kicker">Pricing</p>
+<h2>One series. One price.</h2>
+<p style="margin:0;font-size:19px;color:var(--muted)">Every book in the series gets the same set. No monthly fee.</p>
+</div>
+<div class="pricing-cards">
+<div class="card">
+<div class="top"><span class="sans" style="font-weight:700;font-size:24px">A+ series set</span><span class="price">$199</span></div>
+<ul class="ticks">
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F3BD6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>A full A+ layout: series banner, book-by-book panels and a reading-order strip</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F3BD6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Designed for every book in one series, ebook and paperback</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F3BD6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Images at Amazon's high-resolution sizes, checked against its content rules</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F3BD6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>A step-by-step guide to adding it in KDP</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F3BD6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>One round of revisions, ready in five days</li>
+</ul>
+<a class="btn btn-primary" href="#start">Get a free concept first</a>
+</div>
+<div class="note soft"><b>Founding offer: $99 for the first three authors</b><span>The same series set. In return, a short testimonial once it's live.</span></div>
+<div class="note" style="border:1px solid var(--line);flex-direction:row;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between">
+<span style="display:flex;flex-direction:column;gap:4px"><b>Also: book launch pages, $290</b><span>A designed page for your book or series with buy buttons and a reader sign-up.</span></span>
+<a class="sans" href="atomic-fall.html" style="font-weight:700;font-size:17px;padding:12px 0">See an example →</a>
+</div>
+</div>
+</section>
+
+<section id="faq" class="soft">
+<div class="wrap section">
+<div class="faq">
+<div style="display:flex;flex-direction:column;gap:12px"><p class="kicker">FAQ</p><h2>Questions</h2></div>
+<div><h3>What is A+ content?</h3><p>The image section Amazon shows under "From the Publisher" on a book's page, below the description. It's where you can show readers the whole series at a glance.</p></div>
+<div><h3>Does Amazon charge for it?</h3><p>No. A+ content is free for KDP authors. You only pay for the design.</p></div>
+<div><h3>Who puts it on my book pages?</h3><p>You add it in your KDP account in a few minutes, using the images and the guide I send. Amazon reviews A+ content before it goes live, which can take up to seven business days.</p></div>
+<div><h3>Can one design go on every book in the series?</h3><p>Yes. Amazon lets you apply the same A+ content to several books at once, ebook and paperback editions included.</p></div>
+<div><h3>What if I don't like the concept?</h3><p>Then you've lost nothing. The concept is free and you only pay once you approve.</p></div>
+</div>
+</div>
+</section>
+
+<section id="start" class="wrap cta">
+<h2>Send your series. Get a free concept.</h2>
+<p style="margin:0;max-width:30em;font-size:20px;color:var(--muted)">Email me one Amazon link from your series and I'll send back a concept within 48 hours.</p>
+<a class="btn btn-primary" style="min-height:58px;padding:0 34px;font-size:19px" href="mailto:lorefrontbooks@gmail.com?subject=Free%20A%2B%20concept%20request">lorefrontbooks@gmail.com</a>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span>Lorefront · Made by Katleho B. Malope</span>
+<span>A+ content for storytellers</span>
+</div>
+</footer>
+
+</body>
+</html>
